@@ -45,14 +45,14 @@
             margin: 0 auto 20px auto;
             background-color: var(--card-white);
             border: 1px solid var(--border-color);
-            border-radius: 22px;
+            border-radius: 20px;
             padding: 10px 18px;
         }
 
         .seta-btn {
             background: none;
             border: none;
-            font-size: 28px;
+            font-size: 22px;
             cursor: pointer;
             color: var(--text-dark);
             padding: 0 10px;
@@ -73,7 +73,7 @@
         .semana-titulo {
             font-family: "Lato", sans-serif;
             font-weight: 700;
-            font-size: 20px;
+            font-size: 24px;
             color: var(--text-dark);
             text-align: center;
             flex: 1;
@@ -89,7 +89,7 @@
 
         .card-funcao {
             background-color: var(--card-white);
-            border-radius: 28px; 
+            border-radius: 22px; 
             padding: 15px; 
             box-shadow: 0 4px 15px rgba(44, 42, 30, 0.05);
             display: flex;
@@ -111,7 +111,7 @@
             width: 100%;
             padding: 8px; 
             background-color: var(--input-bg);
-            border-radius: 18px; 
+            border-radius: 15px; 
             font-size: 18px; 
             color: var(--text-dark);
             font-weight: bold;
@@ -132,7 +132,7 @@
 
     <div class="seletor-semana">
         <button class="seta-btn" id="btn-anterior" onclick="navegar(-1)">◀</button>
-        <div class="semana-titulo" id="label-semana">Carregando dados...</div>
+        <div class="semana-titulo" id="label-semana">Carregando...</div>
         <button class="seta-btn" id="btn-proxima" onclick="navegar(1)">▶</button>
     </div>
     
@@ -209,8 +209,8 @@
                 atualizarTela();
 
             } catch (erro) {
-                console.error("Erro ao carregar dados:", erro);
-                document.getElementById('label-semana').innerText = "Erro ao carregar dados";
+                console.error("Erro ao carregar dados...", erro);
+                document.getElementById('label-semana').innerText = "Erro ao Carregar";
             }
         }
 
