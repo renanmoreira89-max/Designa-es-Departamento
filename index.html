@@ -91,8 +91,8 @@
 
         .card-funcao {
             background-color: var(--card-white);
-            border-radius: 23px; 
-            padding: 12px 20px; 
+            border-radius: 25px; 
+            padding: 14px 20px; 
             box-shadow: 0 4px 15px rgba(44, 42, 30, 0.05);
             display: flex;
             flex-direction: column;
@@ -129,10 +129,37 @@
             font-style: italic;
             font-weight: normal;
         }
+
+  "short_name": "Designações",
+  "name": "Designações Departamentos",
+  "description": "Visualização de designações para as reuniões",
+  "icons": [
+    {
+      "src": "001-checklist.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "001-checklist.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": ".",
+  "background_color": "#ffffff",
+  "theme_color": "#FFB700",
+  "display": "standalone",
+  "orientation": "portrait"
+}
+
     </style>
 </head>
 <body>
 
+    <link rel="manifest" href="manifest.json">
+    
     <div class="seletor-semana">
         <button class="seta-btn" id="btn-anterior" onclick="navegar(-1)" style="display: inline-block; transform: rotate(180deg) translateY(-2px);">➜</button>
         <div class="semana-titulo" id="label-semana">Carregando...</div>
